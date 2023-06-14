@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotificationSample.HydrationAlarm">
+    <ContentPage.Content>
+        <StackLayout Padding="20" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+
+            <Label Text="Hydration Alarm" 
+           FontSize="40" 
+           TextColor="#0099CC" 
+           HorizontalTextAlignment="Center" 
+           Margin="0,50,0,30" />
+
+            <Entry Placeholder="Interval in minutes" 
+           x:Name="interval" 
+           Keyboard="Numeric" 
+           Margin="0,0,0,20"/>
+
+            <Button x:Name="sendButton" 
+            Text="Send Notification" 
+            BackgroundColor="#0099CC" 
+            TextColor="White" 
+            FontAttributes="Bold"
+            Margin="0,0,0,20"
+            Clicked="SendNotification"/>
+
+            <Label x:Name="remindLabel"
+           Text=""
+           FontSize="24"
+           TextColor="#0099CC"
+           HorizontalTextAlignment="Center"
+           Margin="0,20,0,10"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
